@@ -1,0 +1,166 @@
+body{
+  background-color: rgb(206, 233, 245);
+  display:grid;
+  place-items: center;
+}
+/* background instagram block */
+.background-box{
+  background-color: rgb(206, 233, 245);
+  height: 45vh;
+  margin-top: 2%;
+  margin-bottom:0%;
+  width: 40%;
+  display: grid;
+  place-items: center;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.insta{
+  height: 100px;
+  border-radius: 25px;
+  position: relative;
+}
+
+/* Username input start */
+.wave-group {
+  position: relative;
+}
+
+.wave-group .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.wave-group .input:focus {
+  outline: none;
+}
+
+.wave-group .label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  display: flex;
+}
+
+.wave-group .label-char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * .05s);
+}
+/* ^Specifies the delay before the transition effect starts. The delay is calculated based on the value of the custom CSS variable --index multiplied by 0.05 seconds. */
+
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5264AE;
+}
+
+.wave-group .bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+
+
+.wave-group .bar:before,.wave-group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+  left: 50%;
+}
+
+.wave-group .bar:after {
+  right: 50%;
+}
+
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+  width: 50%;
+}
+/* Username input end */
+.find-account{
+  border:none;
+  padding-left:40px;
+  padding-right:40px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  border-radius: 50px;
+  background-color: rgb(206, 233, 245);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  cursor: pointer;
+}
+.note{
+  position: absolute;
+  top:32.5vh;
+}
+
+.h1words{
+  font-weight: bold;
+}
+
+/* Circle loader start*/
+svg {
+  width: 3.25em;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+  position: absolute;
+  top: 40vh;
+  left: 65%;
+  display: none;
+ }
+ 
+ circle {
+  fill: none;
+  stroke: hsl(214, 97%, 59%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+ }
+ 
+ @keyframes rotate4 {
+  100% {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes dash4 {
+  0% {
+   stroke-dasharray: 1, 200;
+   stroke-dashoffset: 0;
+  }
+ 
+  50% {
+   stroke-dasharray: 90, 200;
+   stroke-dashoffset: -35px;
+  }
+ 
+  100% {
+   stroke-dashoffset: -125px;
+  }
+ }
+ 
+/* end  */
+
+.notFollowingList{
+  font-size: 25px;
+}
