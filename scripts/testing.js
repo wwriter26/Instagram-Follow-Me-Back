@@ -5,7 +5,7 @@ function showSvg() {
 
 // Function to make API requests to the Instagram API
 async function makeRequest(endpoint, params) {
-  const accessToken = 'IGQVJXX3NaXzlwLTEzVjRfSmpSaWlUeVowUjZAEVVZAYdDZABWDBJUExTdndvT3dqTW1iZAnB2N05KSDhuTmJ0dzNMS0U1VThKcVppZA21vcGp3REdzSHNXWXVKaGtXYWFQaVdPVnFCOFJ3VWhsamsyeVktaQZDZD'; // Replace with your access token
+  const accessToken = 'IGQVJValFlVFpibVllZAUl2TnI1ZATFVdW50T0RlQzZA4NFhud2ZAPdTJrTkVic2RnT3NheVNzRmNKdWdVQllEWUVoSUlTMWRxT0U2Wmw1Q3c0YmxGQVpNTmVPNm5qaGNlRF9CdkI3ZAE1sdnp2ZAVVMSkJpMQZDZD'; // Replace with your access token
   const apiUrl = `https://api.instagram.com/${endpoint}?access_token=${accessToken}`;
 
   try {
